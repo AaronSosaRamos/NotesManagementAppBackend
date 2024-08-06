@@ -3,7 +3,7 @@
     "env": {
         "NODE_ENV": "production",
         "PORT": "3001",
-        "ALLOWED_UI_DOMAINS": "https://notes-management-app-three.vercel.app",
+        "ALLOWED_UI_DOMAINS": "https://notes-management-app-three.vercel.app/",
         "DB_HOST": "ep-icy-bread-a4j8853k-pooler.us-east-1.aws.neon.tech",
         "DB_USER": "default",
         "DB_PASSWORD": "lkAqFBX4KY0g",
