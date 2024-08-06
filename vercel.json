@@ -30,7 +30,7 @@
                 "PATCH"
             ],
             "headers": {
-                "Access-Control-Allow-Origin": "*"
+                "Access-Control-Allow-Origin": "https://notes-management-app-three.vercel.app/"
             }
         }
     ]
