@@ -22,7 +22,7 @@ async function bootstrap() {
     credentials: true,
   };
 
-  //app.enableCors(corsOptions);
+  app.enableCors(corsOptions);
 
   const config = new DocumentBuilder()
     .setTitle('Note Management Backend API')
