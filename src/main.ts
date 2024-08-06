@@ -10,7 +10,13 @@ async function bootstrap() {
   const allowedDomains = env.ALLOWED_UI_DOMAINS.split(',');
 
   const corsOptions: CorsOptions = {
-    origin: allowedDomains,
+    origin: (origin, callback) => {
+      if (allowedDomains.includes(origin) || !origin) {
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
+      }
+    },
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true,
@@ -27,6 +33,6 @@ async function bootstrap() {
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('docs', app, document);
 
-  await app.listen(env.PORT);
+  await app.listen(env.PORT || 3001);
 }
 bootstrap();
