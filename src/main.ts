@@ -10,7 +10,7 @@ async function bootstrap() {
   const allowedDomains = env.ALLOWED_UI_DOMAINS.split(',');
 
   const corsOptions: CorsOptions = {
-    origin: 'https://notes-management-app-three.vercel.app/',
+    origin: allowedDomains,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true,
