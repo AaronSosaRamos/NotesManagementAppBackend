@@ -1,35 +1,35 @@
 {
-    "version": 2,
-    "env": {
-        "NODE_ENV": "production",
-        "PORT": "3001",
-        "ALLOWED_UI_DOMAINS": "https://notes-management-app-three.vercel.app/,http://localhost:3000/",
-        "DB_HOST": "ep-icy-bread-a4j8853k-pooler.us-east-1.aws.neon.tech",
-        "DB_USER": "default",
-        "DB_PASSWORD": "lkAqFBX4KY0g",
-        "DB_DATABASE": "verceldb",
-        "EMAIL": "email@gmail.com",
-        "PASSWORD": "passw123ORD*",
-        "JWT_SECRET": "secret"
-    },
-    "builds": [
-        {
-            "src": "src/main.ts",
-            "use": "@vercel/node"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "src/main.ts",
-            "methods": [
-                "GET",
-                "POST",
-                "PUT",
-                "DELETE",
-                "PATCH",
-                "OPTIONS"
-            ]
-        }
-    ]
+  "version": 2,
+  "env": {
+    "NODE_ENV": "production",
+    "PORT": "3001",
+    "ALLOWED_UI_DOMAINS": "https://notes-management-app-three.vercel.app,http://localhost:3000",
+    "DB_HOST": "ep-icy-bread-a4j8853k-pooler.us-east-1.aws.neon.tech",
+    "DB_USER": "default",
+    "DB_PASSWORD": "lkAqFBX4KY0g",
+    "DB_DATABASE": "verceldb",
+    "EMAIL": "email@gmail.com",
+    "PASSWORD": "passw123ORD*",
+    "JWT_SECRET": "secret"
+  },
+  "builds": [
+    {
+      "src": "src/main.ts",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "src/main.ts",
+      "methods": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE",
+        "PATCH",
+        "OPTIONS"
+      ]
+    }
+  ]
 }
