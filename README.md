@@ -4,19 +4,19 @@ Welcome to **NotesManagementAppBackend**, a comprehensive backend solution desig
 
 ## Table of Contents 📑
 
-- [Introduction](#introduction)
-- [Key Features](#key-features)
-- [Use Cases](#use-cases)
-- [Tech Stack](#tech-stack)
-- [Authentication and Security](#authentication-and-security)
-- [Database Integration](#database-integration)
-- [Environment Configuration](#environment-configuration)
-- [API Documentation](#api-documentation)
-- [Installation Guide](#installation-guide)
-- [How to Use](#how-to-use)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+- [Introduction](#introduction-)
+- [Key Features](#key-features-)
+- [Use Cases](#use-cases-)
+- [Tech Stack](#tech-stack-)
+- [Authentication and Security](#authentication-and-security-)
+- [Database Integration](#database-integration-)
+- [Environment Configuration](#environment-configuration-)
+- [API Documentation](#api-documentation-)
+- [Installation Guide](#installation-guide-)
+- [How to Use](#how-to-use-)
+- [Contributing](#contributing-)
+- [License](#license-)
+- [Acknowledgments](#acknowledgments-)
 
 ---
 
